@@ -5,7 +5,7 @@ function Get-ComputerDetails
     )
 
     $ExplicitLogons = $SecurityLog | Where {$_.InstanceID -eq 4648}
-    $ReturnInfo = @{}
+    $ReturnInfo = 
 
     foreach ($ExplicitLogon in $ExplicitLogons)
     {
