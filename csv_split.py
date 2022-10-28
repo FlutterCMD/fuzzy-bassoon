@@ -1,25 +1,6 @@
 import sys
 import os
 import csv
-import argparse
-
-"""
-Splits a CSV file into multiple files based on command line arguments.
-    Arguments:
-    `-h`: help file of usage of the script
-    `-i`: input file name
-    `-o`: output file name
-    `-r`: row limit to split
-    Default settings:
-    `output_path` is the current directory
-    headers are displayed on each split file
-    the default delimeter is a comma
-    Example usage:
-    ```
-    # split csv by every 100 rows
-    >> python csv_split.py -i input.csv -o output -r 100
-    ```
-"""
 
 
 def get_arguments():
