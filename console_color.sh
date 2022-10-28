@@ -10,12 +10,7 @@ _ctct_PROG="$(basename "$($_ctct_READLINK_CMD -f "${BASH_SOURCE[0]}")")"
 readonly _ctct_ec=$'\033'      # escape char
 readonly _ctct_eend=$'\033[0m' # escape end
 
-colorEcho() {
-    local combination="$1"
-    shift 1
 
-    [ -t 1 ] && echo "${_ctct_ec}[${combination}m$*$_ctct_eend" || echo "$*"
-}
 
 colorEchoWithoutNewLine() {
     local combination="$1"
