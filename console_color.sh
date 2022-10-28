@@ -35,13 +35,7 @@ colorEchoWithoutNewLine() {
     done
 
     echo "Code sample to print color text:"
-
-    echo -n '    echo -e "\033['
-    colorEchoWithoutNewLine "3;35;40" "1;36;41"
-    echo -n "m"
-    colorEchoWithoutNewLine "0;32;40" "Sample Text"
-    echo "\033[0m\""
-
+dsfds
     echo -n "    echo \$'\033["
     colorEchoWithoutNewLine "3;35;40" "1;36;41"
     echo -n "m'\""
